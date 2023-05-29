@@ -49,3 +49,7 @@ Easiest way is to do this from jenkins by running destroy command in replay feat
 ![image](https://github.com/ArshaShiri/DevOpsBootcampTerraformCICD/assets/18715119/b0d288b2-ab99-40c9-8f36-64117150aad1)
 ![image](https://github.com/ArshaShiri/DevOpsBootcampTerraformCICD/assets/18715119/ed0d8e31-4828-4ada-8f80-013a1a47c622)
 ![image](https://github.com/ArshaShiri/DevOpsBootcampTerraformCICD/assets/18715119/dc624617-c028-4dec-a195-0c20e58c3eab)
+
+## Storing Terraform State
+
+It would be very convenient so share Terraform sate. So far the state has been stored in Jenkins server only which can be unsafe in case the server crashes etc. An S3 bucket should then be created on AWS.
