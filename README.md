@@ -56,3 +56,11 @@ It would be very convenient so share Terraform sate. So far the state has been s
 ![image](https://github.com/ArshaShiri/DevOpsBootcampTerraformCICD/assets/18715119/0a66e060-d8cd-421b-865b-1d947cab8b30)
 
 Make sure that `Bucket Versioning` is actiaveted as well.
+If we want to access the state locally then we have to:
+
+    terraform init
+    
+    # Check all the shared states.
+    terraform state list
+    
+    
