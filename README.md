@@ -40,3 +40,4 @@ The configuration files and the associated step to Jenkinsfile is added and can 
 
 ## Docker Login to Pull Docker Image
 
+Necessary configurations are added to `server-cmds.sh` and Jenkinsfile.
