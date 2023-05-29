@@ -41,3 +41,11 @@ The configuration files and the associated step to Jenkinsfile is added and can 
 ## Docker Login to Pull Docker Image
 
 Necessary configurations are added to `server-cmds.sh` and Jenkinsfile.
+
+## Destroy the Resources
+
+Easiest way is to do this from jenkins by running destroy command in replay feature.
+
+![image](https://github.com/ArshaShiri/DevOpsBootcampTerraformCICD/assets/18715119/b0d288b2-ab99-40c9-8f36-64117150aad1)
+![image](https://github.com/ArshaShiri/DevOpsBootcampTerraformCICD/assets/18715119/ed0d8e31-4828-4ada-8f80-013a1a47c622)
+![image](https://github.com/ArshaShiri/DevOpsBootcampTerraformCICD/assets/18715119/dc624617-c028-4dec-a195-0c20e58c3eab)
