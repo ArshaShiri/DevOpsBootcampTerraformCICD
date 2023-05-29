@@ -36,3 +36,4 @@ The installation process can be followed [here](https://developer.hashicorp.com/
 ## Terraform Configuration Files and Jenkins Step
 
 The configuration files and the associated step to Jenkinsfile is added and can be inspected in the commit history.
+![image](https://github.com/ArshaShiri/DevOpsBootcampTerraformCICD/assets/18715119/9ed80660-9548-4b57-a15d-a9a85d7d6f95)
