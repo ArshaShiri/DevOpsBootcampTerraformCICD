@@ -13,6 +13,10 @@ variable env_prefix {
 variable my_ip {
     default = "84.85.144.132/32"
 }
+variable jenkins_ip {
+    default = "164.90.226.232/32"
+}
+
 variable instance_type {
     default = "t2.micro"
 }
