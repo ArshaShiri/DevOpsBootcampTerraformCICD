@@ -89,6 +89,11 @@ pipeline {
         }
 
         stage("deploy") {
+            environment {
+                // Read from Jenkins credentials
+                // {var-name}_USR and {var-name}_PSW are then created automatically
+                DOCKER_CREDS = credentials('docker-hub-repo')
+            }
             steps {
                 script {
                     // Ideally this wait should be executed only when the server is being created not when it is already there
@@ -100,7 +105,7 @@ pipeline {
                     echo "${EC2_PUBLIC_IP}"
 
                     // Run server-cmds.sh
-                    def shellCmd = "bash ./server-cmds.sh ${IMAGE_NAME}"
+                    def shellCmd = "bash ./server-cmds.sh ${IMAGE_NAME} ${DOCKER_CREDS_USR} ${DOCKER_CREDS_PSW}"
                     def ec2Instance = "ec2-user@${EC2_PUBLIC_IP}"
 
                     sshagent(['server-ssh-key']) {
