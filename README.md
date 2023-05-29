@@ -4,7 +4,7 @@
 
 * Plugins:
   * All the default suggested plugins when setting Jenkins up
-  * 
+  * ssh agent
 
 * Tools:
   * maven-3.8.6
@@ -31,3 +31,8 @@ After sshing into our droplet on digital ocean:
     cat /etc/os-release 
     
 The installation process can be followed [here](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli).
+
+
+## Terraform Configuration Files and Jenkins Step
+
+The configuration files and the associated step to Jenkinsfile is added and can be inspected in the commit history.
